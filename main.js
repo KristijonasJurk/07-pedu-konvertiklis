@@ -9,11 +9,11 @@ button.addEventListener('click', function (e) {
 
     if (coliai.value === '' || pedos.value === '') {
         answer.innerHTML = 'Pamirsote kazka ivesti...'
-    } if (isNaN(pedos.value) || isNaN(coliai.value)) {
+    } else if (isNaN(pedos.value) || isNaN(coliai.value)) {
         answer.innerHTML = 'Siaip skaicius prasiau irasyti...'
-    } if (parseInt(pedos.value) < 0 || parseInt(coliai.value) < 0) {
+    } else if (parseInt(pedos.value) < 0 || parseInt(coliai.value) < 0) {
         answer.innerHTML = 'Irasyti teigiama skaiciu reiktu siaip...'
-    } if (parseInt(coliai.value) > 11) {
+    } else if (parseInt(coliai.value) > 11) {
         answer.innerHTML = 'coliai iki 12 teeina siaip'
     }
     else {
